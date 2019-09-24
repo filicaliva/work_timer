@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>TO-do</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="screen one">
+                <div class="circle"></div>
+        </div>
+
+        <div class="screen two">
+            <p id = "timer">00:00</p>
+            <form  name = "timerForm">
+
+                <span class="green"><img src='img/icons8-checkmark.png'  id="timerForm__svg"></span>
+
+                <input type="text" name="timerForm__title" id="timerForm__title" placeholder="Title">
+                
+                <textarea id = 'timerForm__text' cols="30" rows="10" placeholder="Enter Text"></textarea>
+                
+            </form>
+        </div>
+    </div>
+ <script src="core.js"></script> 
+
 </body>
 </html>

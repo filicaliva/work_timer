@@ -1,1 +1,160 @@
-/* No CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F76C6C;
+}
+
+.wrapper{
+    background-color: #F76C6C;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    min-height: 300px;
+}
+
+
+.circle { 
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #F8E9A1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.two{
+    display: none;
+}
+
+#timer{
+    top: 15vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    font-family: 'Roboto';
+    color: #F8E9A1;
+    cursor: pointer;
+}
+
+.green{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(28%, 59%, 38%, 0.25);
+    top: 16vh;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 70px;
+}
+
+.green:hover{
+    background-color: rgba(28%, 59%, 38%, 1);
+    cursor: pointer;
+}
+
+#timerForm__svg{
+    width: 30px;
+    position: absolute;
+    top: 7px;
+    left: 6px;
+
+}
+
+#timerForm__title{
+    width: 400px;
+    height: 36px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 38vh;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 24px;
+    outline: none;
+    border: none;
+}
+
+#timerForm__text{
+    width: 80%;
+    height: 60vh;
+    max-width: 1100px;
+    top: 20vh;
+    left: 50%;
+    margin-top: 50vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 0 35px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    resize: none;
+    outline: none;
+    border: none;
+    overflow: ;
+}
+
+
+
+@keyframes move {
+    from{
+        top: 46%; 
+        opacity: 100%;
+    }to {
+        top:-20%;
+        opacity: 0;
+    }
+}
+
+@keyframes opacits { 
+    from{
+        opacity: 0;
+    }to{
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #timer{
+        top: 11vh;
+        font-size: 55px;
+    }
+
+    .green{
+        margin-top: 50px;
+    }
+
+    #timerForm__text{
+        margin-top: 51vh;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    #timer{
+        top: 11vh;
+        font-size: 40px;
+    }
+
+    .green{
+        margin-top: 50px;
+    }
+
+    #timerForm__text{
+        margin-top: 51vh;
+        width: 60%;
+        padding: 0 10px;
+        font-size: 15px;
+    }
+    #timerForm__title{
+        width: 40%;
+        height: 17px;
+        margin-top: 38vh;
+        font-size: 12px;
+    }
+
+}
